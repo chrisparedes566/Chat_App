@@ -1,15 +1,15 @@
 {
-  "name": "practice",
+  "name": "mongochat",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple chat app using sockets",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "author": "Christopher Paredes",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^3.1.13",
+    "mongodb": "^2.2.36",
     "socket.io": "^2.2.0"
   }
 }
