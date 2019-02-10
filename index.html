@@ -81,7 +81,7 @@
 							</div>
 						</div>
 						<div id="messages" class="card-body msg_card_body">
-							<div class="d-flex justify-content-start mb-4">
+							<!-- <div class="d-flex justify-content-start mb-4">
 								<div class="img_cont_msg">
 									<img src="https://devilsworkshop.org/files/2013/01/enlarged-facebook-profile-picture.jpg" class="rounded-circle user_img_msg">
 								</div>
@@ -98,7 +98,7 @@
 								<div class="img_cont_msg">
 							<img src="https://devilsworkshop.org/files/2013/01/enlarged-facebook-profile-picture.jpg" class="rounded-circle user_img_msg">
 								</div>
-							</div>
+							</div> -->
 						</div>
 						<div class="card-footer">
 							<div class="input-group">
@@ -157,7 +157,7 @@
                             for(var x = 0;x < data.length;x++){
                                 // Build out message div
                                 var message = document.createElement('div');
-                                message.setAttribute('class', 'chat-message');
+                                message.setAttribute('class', 'chat-message msg_cotainer');
                                 message.textContent = data[x].name+": "+data[x].message;
                                 messages.appendChild(message);
                                 messages.insertBefore(message, messages.firstChild);
@@ -184,7 +184,7 @@
                                 name:username.value,
                                 message:textarea.value
                             });
-    
+                            textarea.value('');
                             event.preventDefault();
                         }
                     })
